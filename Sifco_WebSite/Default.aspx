@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col-md-5">
             <h2>Listado de Medicos </h2>
-            <asp:GridView ID="gvdMedicos" runat="server" AutoGenerateColumns ="False" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
+            <asp:GridView ID="gvdMedicos" runat="server" AutoGenerateColumns ="False" DataSourceID="SqlDataSource1" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" OnSelectedIndexChanged="gvdMedicos_SelectedIndexChanged">
                 <Columns>
                     <asp:BoundField DataField="Medico" HeaderText="Medico" SortExpression="Medico" />
                     <asp:BoundField DataField="No. Colegiado" HeaderText="No. Colegiado" SortExpression="No. Colegiado" />
@@ -30,7 +30,7 @@
         <div class="col-md-5">
             <h2>¿Desea Agendar una cita?</h2>
             <p>
-                <a class="btn btn-default" href="Consultar_datos_consulta.aspx">Crear Consulta &raquo;</a>
+                <a class="btn btn-default" href="Agendar_cita.aspx">Crear Consulta &raquo;</a>
             </p>
 
              <h2>¿Deseas revisar sus datos de consulta?</h2>

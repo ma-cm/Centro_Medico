@@ -8,19 +8,22 @@
         <div class="col-md-5">
             <div class="form-group">
                 <label for="inputpc">Nombre Medico</label>
-                <input type="text" class="form-control" id="tx_nombre" placeholder="Nombre Completo">
+                <asp:TextBox class="form-control" id="tx_nombre" placeholder="Nombre Completo" runat="server"/>
                 <label for="inputpc">Numero Colegiado</label>
-                <input type="text" class="form-control" id="tx_dpi" placeholder="Colegiado">
+                <asp:TextBox class="form-control" id="tx_colegiado" placeholder="No Colegiado" runat="server"/>
                 <label for="inputpc">Fecha de Nacimiento</label>
-                <input type="text" class="form-control" id="tx_nacimiento" placeholder="Fecha naciemiento MM-DD-YYYY">
+                <asp:TextBox class="form-control" id="tx_nacimiento" placeholder="Fecha naciemiento MM-DD-YYY" runat="server"/>                
                 <label for="inputpc">Sexo</label>
-                <input type="text" class="form-control" id="tx_sexo" placeholder="Sexo">
+                <asp:DropDownList class="form-control" ID="tx_sexo" runat="server">
+                    <asp:ListItem Text="Mujer" Value="m" />
+                    <asp:ListItem Text="Hombre" Value="h" />
+                </asp:DropDownList>  
                 <label for="inputpc">Especialidad</label>
-                <input type="text" class="form-control" id="tx_especialidad" placeholder="Sexo">
+                <asp:TextBox class="form-control" id="tx_especialidad" placeholder="Especialidad" runat="server"/>                
                 
              </div>
 
-            <a class="btn btn-default" onclick="ConsultarPaciente">Agregar &raquo;</a>
+            <asp:Button id="Button1" class="btn btn-default" Text="Submit" OnClick="AgregarMedico"  runat="server"/>
 
         </div>
         <div class="col-md-5">

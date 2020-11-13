@@ -26,4 +26,9 @@ public partial class _Default : Page
             }
         }
     }
+
+    protected void gvdMedicos_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
 }

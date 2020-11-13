@@ -8,15 +8,13 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
-
-public partial class Consultar_datos_consulta : System.Web.UI.Page
+public partial class Editar_Consulta : System.Web.UI.Page
 {
-    private readonly object Message;
-
     protected void Page_Load(object sender, EventArgs e)
     {
-        
+
     }
+
 
     public void ConsultarPaciente(Object sender, EventArgs e)
     {
@@ -55,8 +53,9 @@ public partial class Consultar_datos_consulta : System.Web.UI.Page
 
     }
 
+    public void EditarConsultaPaciente(Object sender, EventArgs e)
+    {
 
-
-
+    }
 
 }

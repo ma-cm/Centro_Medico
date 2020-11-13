@@ -8,17 +8,19 @@
         <div class="col-md-5">
             <div class="form-group">
                 <label for="inputpc">Nombre Paciente</label>
-                <input type="text" class="form-control" id="tx_nombre" placeholder="Nombre Completo">
+                <asp:TextBox class="form-control" id="tx_nombre" placeholder="Nombre Completo" runat="server"/>
                 <label for="inputpc">DPI</label>
-                <input type="text" class="form-control" id="tx_dpi" placeholder="DPI">
+                <asp:TextBox class="form-control" id="tx_dpi" placeholder="DPI" runat="server"/>
                 <label for="inputpc">Fecha de Nacimiento</label>
-                <input type="text" class="form-control" id="tx_nacimiento" placeholder="Fecha naciemiento MM-DD-YYYY">
+                <asp:TextBox class="form-control" id="tx_nacimiento" placeholder="Fecha naciemiento MM-DD-YYYY" runat="server"/>
                 <label for="inputpc">Sexo</label>
-                <input type="text" class="form-control" id="tx_sexo" placeholder="Sexo">
-                
+                <asp:DropDownList class="form-control" ID="tx_sexo" runat="server">
+                    <asp:ListItem Text="Mujer" Value="m" />
+                    <asp:ListItem Text="Hombre" Value="h" />
+                </asp:DropDownList>                                                
              </div>
 
-            <a class="btn btn-default" onclick="AgregarPaciente">Agregar &raquo;</a>
+            <asp:Button id="Button1" class="btn btn-default" Text="Submit" OnClick="AgregarPaciente"  runat="server"/>
 
         </div>
         <div class="col-md-5">

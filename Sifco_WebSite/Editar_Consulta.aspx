@@ -1,10 +1,8 @@
-﻿<%@ Page Title="Consulta" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Consultar_datos_consulta.aspx.cs" Inherits="Consultar_datos_consulta" %>
-
-
+﻿<%@ Page Title="Editar" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Editar_Consulta.aspx.cs" Inherits="Editar_Consulta" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumbotron">
-        <h1>Consultar datos de Paciente</h1>
+        <h1>Editar datos de Paciente</h1>
     </div>
     <div class="row">
         <div class="col-md-5">
@@ -26,11 +24,9 @@
            <asp:TextBox class="form-control" id="tx_hora" placeholder="" ReadOnly="True" runat="server"/>
             <label for="inputpc">Estado de consulta</label>
            <asp:TextBox class="form-control" id="tx_estado" placeholder="" ReadOnly="True" runat="server"/>
-
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" >
-                
-
-            </asp:GridView>
+            <div>
+                <asp:Button id="Button2" class="btn btn-default" Text="Editar" OnClick="ConsultarPaciente"  runat="server"/>
+            </div>
         </div>
     </div>
 
